@@ -19,6 +19,6 @@ jobs:
         run: pip install requests==2.26.0
       - name: 'Working'
         env:
-          ACCOUNT: ${{ secrets.ACCOUNT }},${{ secrets.ACCOUNT871 }}
-          PASSWORD: ${{ secrets.PASSWORD }},${{ secrets.PASSWORD871 }}
+          ACCOUNT: ${{ secrets.ACCOUNT }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: python ./main.py
