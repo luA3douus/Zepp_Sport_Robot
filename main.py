@@ -106,8 +106,8 @@ if __name__ == "__main__":
     ACCOUNT = os.environ["ACCOUNT"]
     PASSWORD = os.environ["PASSWORD"]
     # 从环境变量中获取 ACCOUNT871 和 PASSWORD871 的值
-    ACCOUNT871 = os.environ.get("ACCOUNT871")
-    PASSWORD871 = os.environ.get("PASSWORD871")
+    ACCOUNT871 = os.environ("ACCOUNT871")
+    PASSWORD871 = os.environ("PASSWORD871")
     RandomMin = 18202 # 随机步数最小值
     RandomMax = 19005 # 随机步数最大值
     account = [# 账号 密码 步数(随机则填None)(可填多个)
